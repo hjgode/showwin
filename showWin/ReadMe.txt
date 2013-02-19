@@ -6,7 +6,11 @@ Display a small window with some text inside
 
 Single instance app
 
-v 1.1:	second release
+v 1.2:	added prval description
+
+v 1.1:	second release, with more TBR related default values
+
+v 1.0:	??
 
 /*
  
@@ -33,7 +37,8 @@ v 1.1:	second release
  
  -progr 10						show with progress val	0					no progressbar, max: 100
 								the progressbar is appended at bottom of textwindow
-								
+ -prval							update progress bar value					no default, min=1, max=100
+ 								
  -kill							kill existing window, exit app
  
  -m "new message text"			replace text in window						see -t
