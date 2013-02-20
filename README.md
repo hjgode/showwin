@@ -1,41 +1,41 @@
-========================================================================
-    WIN32 APPLICATION : showWin Project Overview
-========================================================================
+<h1>WIN32 CE APPLICATION : showWin Project Overview</h1>
 
-Display a small window with some text inside
+Display a small window with some text inside<p>
 
-Single instance app
+Single instance app<p>
 
-v 1.1:  second release
+v 1.1:  second release<p>
 
-/*
- 
+<pre>
  showWin -t "Text zum Anzeigen" -r 90 -g 80 -b 70 -s 8 -w 200 -h 50 -x 0 -y 0 -rt 200 -gt 20 -bt 20 -ti 10 -progr 30 -align left
+</pre><p>
+
+<table>
+<tr><td>ARGS:</td><td></td><td></td><td></td></tr>
+<tr><td>option/parameter:</td><td>meaning:</td><td>default:</td><td>limitations:</td></tr>
+<tr><td>-t "Text zum Anzeigen"</td><td>text to show</td><td>"Installing"</td><td>255 chars, no " inside, no line breaks, no tabs</td></tr>
+<tr><td>-r 90</td><td>background color RED</td><td>255</td><td>0-255</td></tr>
+<tr><td>-g 80</td><td>background color GREEN</td><td>207</td><td>0-255</td></tr>
+<tr><td>-b 70</td><td>background color BLUE</td><td>0</td><td>0-255</td></tr>
+<tr><td>-s 8</td><td>font size in points</td><td>10</td><td>7-24 points</td></tr>
+<tr><td>-w 200</td><td>window width pixels</td><td>460</td><td>100-screenwidth</td></tr>
+<tr><td>-h 50</td><td>window height pixels</td><td>40</td><td>menu bar height (ie 26pixels)</td></tr>
+<tr><td>-x 60</td><td>window pos X</td><td>12</td><td>0 + system window bordersize</td></tr>
+<tr><td>-y 60</td><td>window pos Y</td><td>48</td><td>0 + system taskbar bar height. Using 0;0 does not work nice on WM, win may be below taskbar</td></tr>
+<tr><td>-rt 200</td><td>text color RED</td><td>0</td><td>0-255</td></tr>
+<tr><td>-gt 20</td><td>text color GREEN</td><td>0</td><td>0-255</td></tr>
+<tr><td>-bt 20</td><td>text color BLUE</td><td>0</td><td>0-255</td></tr>
+<tr></tr> 
+<tr><td>-align center</td><td>text alignment</td><td>left</td><td>center|left|right</td></tr>
+<tr></tr> 
+<tr><td>-ti 10</td><td>timeout to autoclose</td><td>0</td><td>no autoclose, min: 1 (second), max: 3600 = one hour</td></tr>
+<tr></tr> 
+<tr><td>-progr 10</td><td>show with progress val</td><td>0</td><td>no progressbar, max: 100
+</td><td>the progressbar is appended at bottom of textwindow</td></tr>
+<tr></tr>
+<tr><td>-kill</td><td>kill existing window, exit app</td></tr>
+<tr></tr> 
+<tr><td>-m "new message text"</td><td>replace text in window</td><td>see -t</td></tr>
+</table>
  
- ARGS: 
- option/parameter:				meaning:				default:			limitations:
- -t "Text zum Anzeigen"			text to show			"Installing"		255 chars, no " inside, no line breaks, no tabs
- -r 90							background color RED	255					0-255
- -g 80							background color GREEN	207					0-255
- -b 70							background color BLUE	0					0-255
- -s 8							font size in points		10					7-24 points
- -w 200							window width pixels		460					100-screenwidth
- -h 50							window height pixels	40					menu bar height (ie 26pixels)
- -x 60							window pos X			12					0 + system window bordersize
- -y 60							window pos Y			48					0 + system taskbar bar height. Using 0;0 does not work nice on WM, win may be below taskbar
- -rt 200						text color RED			0					0-255
- -gt 20							text color GREEN		0					0-255
- -bt 20							text color BLUE			0					0-255
- 
- -align center					text alignment			left				center|left|right
- 
- -ti 10							timeout to autoclose	0					no autoclose, min: 1 (second), max: 3600 = one hour
- 
- -progr 10						show with progress val	0					no progressbar, max: 100
-								the progressbar is appended at bottom of textwindow
-								
- -kill							kill existing window, exit app
- 
- -m "new message text"			replace text in window						see -t
- 
-*/
+
