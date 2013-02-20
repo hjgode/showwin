@@ -36,6 +36,7 @@ v 1.1:  second release<p>
 <tr><td>-kill</td><td>kill existing window, exit app</td></tr>
 <tr></tr> 
 <tr><td>-m "new message text"</td><td>replace text in window</td><td>see -t</td></tr>
+<tr><td>-prval 30</td><td>new progress value</td></tr>
 </table>
  
 
