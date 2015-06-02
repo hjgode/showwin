@@ -604,7 +604,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			SelectObject(hdc, hfOld);
 			SetTextColor(hdc, oldTextColor);
 
-			if(hProgress!=NULL)
+			//if(hProgress!=NULL)
 
 			DeleteObject(hFont);
             break;
